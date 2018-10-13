@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global */
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+    url('../fonts/BrandonGrotesque-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+    url('../fonts/BrandonGrotesque-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+    url('../fonts/BrandonGrotesque-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+body {
+	min-height: 100%;
+	font-family: 'Brandon Grotesque', 'Times New Roman', sans-serif;;
+	font-weight: normal; 
+	font-style: normal;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+.clearFix {
+	overflow: hidden;
+	display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+	display: block; /* Sets element back to block */
+}
+.fluidImage {
+	width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+
+#header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.cities {
+	padding: 20px 0;
+	text-align: center;
+}
+.cities li {
+	display: inline;
+	padding: 0 14px;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+/* Main Container */
+
+#main {
+	opacity: 0;
+}
+
+.logo {
+	padding: 0 5px;
+	margin: 0 auto;
+	width: 320px;
+}
+
+/* Footer */
+
+#footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+#footer p {
+	padding: 10px 5px;
+	line-height: 24px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}

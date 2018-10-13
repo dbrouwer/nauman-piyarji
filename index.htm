@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="description" content="Nauman Piyarji">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	  <title>Nauman Piyarji</title>
+	  <link rel="shortcut icon" href="favicon.ico" />
+	  <link rel="stylesheet" href="css/styles.css">
+	  <script src="js/jquery-3.3.1.min.js"></script>
+	  <script>
+	  	function vAlignMiddle() {
+		    var bodyHeight = ($(document).height() / 2);
+		    var mainHeight = ($('#main').height() / 2);
+		    var paddingToMiddle = bodyHeight - mainHeight;
+
+		    $("#main").css("padding-top", paddingToMiddle);
+	  	}
+			$(function() {
+				vAlignMiddle();
+
+				$("#main").fadeTo("slow", 1);
+			});
+			$(window).on('resize', function(){
+				vAlignMiddle();
+			});
+	  </script>
+	</head>
+	<body>
+		<header id="header">
+			<ul class="cities">
+				<li>New York</li>
+				<li>London</li>
+				<li>Mumbai</li>
+				<li>Dubai</li>
+				<li>Los Angeles</li>
+			</ul>
+		</header>
+		<section id="main">
+			<div class="logo"><img src="img/nauman-piyarji-logo@2x.png" alt="Nauman Piyarji - Established 1999" class="fluidImage" /></div>
+		</section>
+		<footer id="footer">
+			<p>
+				Bespoke<br />
+				By Appointment Only
+			</p>
+			<p>
+				<a href="mailto:info@naumanpiyarji.com">info@naumanpiyarji.com</a>
+			</p>
+		</footer>
+	</body>
+</html>
