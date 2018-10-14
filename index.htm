@@ -10,11 +10,21 @@
 	  <script src="js/jquery-3.3.1.min.js"></script>
 	  <script>
 	  	function vAlignMiddle() {
-		    var bodyHeight = ($(document).height() / 2);
-		    var mainHeight = ($('#main').height() / 2);
-		    var paddingToMiddle = bodyHeight - mainHeight;
+	  		// Reset padding
+		    $("#logo").css("padding-top", 0);
+		    $("#logo").css("padding-bottom", 0);
 
-		    $("#main").css("padding-top", paddingToMiddle);
+		    // Get height of body and logo container
+		    var bodyHeight = ($(document).height() / 2);
+		    var mainHeight = ($('#logo').height() / 2);
+
+		    // Determine the padding necessary to vertically align the logo in the middle
+		    var paddingToMiddle = bodyHeight - mainHeight;
+		   	$("#logo").css("padding-top", paddingToMiddle);
+
+		    // Add padding for the footer
+		    var footerHeight = $('#footer').height();
+		    $("#logo").css("padding-bottom", footerHeight + 20);
 	  	}
 			$(function() {
 				vAlignMiddle();
@@ -37,7 +47,7 @@
 			</ul>
 		</header>
 		<section id="main">
-			<div class="logo"><img src="img/nauman-piyarji-logo@2x.png" alt="Nauman Piyarji - Established 1999" class="fluidImage" /></div>
+			<div id="logo"><img src="img/nauman-piyarji-logo@2x.png" alt="Nauman Piyarji - Established 1999" class="fluidImage" /></div>
 		</section>
 		<footer id="footer">
 			<p>

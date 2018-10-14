@@ -74,6 +74,7 @@ html {
   height: 100%;
 }
 body {
+	position: relative;
 	min-height: 100%;
 	font-family: 'Brandon Grotesque', 'Times New Roman', sans-serif;;
 	font-weight: normal; 
@@ -119,7 +120,7 @@ a {
 	opacity: 0;
 }
 
-.logo {
+#logo {
 	padding: 0 5px;
 	margin: 0 auto;
 	width: 320px;
