@@ -108,7 +108,7 @@ a {
 }
 .cities li {
 	display: inline-block;
-	padding: 5px 8px;
+	padding: 8px;
 	font-size: 24px;
 	text-transform: uppercase;
 }
