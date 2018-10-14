@@ -21,11 +21,11 @@
         var paddingToMiddle = bodyHeight - logoHeight;
 
         if (headerHeight > paddingToMiddle) {
-          paddingToMiddle = headerHeight;
+          paddingToMiddle = headerHeight + 20;
         }
 
         // Add the padding necessary to vertically align the logo in the middle
-        $("#logo").css("padding-top", paddingToMiddle + 20);
+        $("#logo").css("padding-top", paddingToMiddle);
 
         // Add padding for the footer
         $("#logo").css("padding-bottom", footerHeight + 20);
