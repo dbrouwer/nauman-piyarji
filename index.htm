@@ -9,29 +9,42 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+      
       function vAlignMiddle() {
         // Reset padding
         $("#logo").css("padding-top", 0);
         $("#logo").css("padding-bottom", 0);
 
-        // Get height of body and logo container
         var bodyHeight = ($(document).height() / 2);
-        var mainHeight = ($('#logo').height() / 2);
+        var logoHeight = ($('#logo').height() / 2);
+        var headerHeight = $('#header').height();
+        var footerHeight = $('#footer').height();
+        var paddingToMiddle = bodyHeight - logoHeight;
 
-        // Determine the padding necessary to vertically align the logo in the middle
-        var paddingToMiddle = bodyHeight - mainHeight;
-        $("#logo").css("padding-top", paddingToMiddle);
+        if (headerHeight > paddingToMiddle) {
+          paddingToMiddle = headerHeight;
+        }
+
+        // Add the padding necessary to vertically align the logo in the middle
+        $("#logo").css("padding-top", paddingToMiddle + 20);
 
         // Add padding for the footer
-        var footerHeight = $('#footer').height();
         $("#logo").css("padding-bottom", footerHeight + 20);
       }
 
       $(function() {
         vAlignMiddle();
 
-        // Fade in logo
         $("#main").fadeTo("slow", 1);
+      });
+
+      $(window).on('resize', function(){
+        // Prevent resize from triggering when scrolling up/down on mobile
+        if ($(window).width() != windowWidth && $(window).height() != windowHeight) {
+          vAlignMiddle();
+        }
       });
     </script>
   </head>

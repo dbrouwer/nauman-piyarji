@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-	 v2.0 | 20110126
-	 License: none (public domain)
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Global */
@@ -74,23 +74,23 @@ html {
   height: 100%;
 }
 body {
-	position: relative;
-	min-height: 100%;
-	font-family: 'Brandon Grotesque', 'Times New Roman', sans-serif;;
-	font-weight: normal; 
-	font-style: normal;
+  position: relative;
+  min-height: 100%;
+  font-family: 'Brandon Grotesque', 'Times New Roman', sans-serif;;
+  font-weight: normal; 
+  font-style: normal;
 }
 a {
-	color: #000;
-	text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 .clearFix {
-	overflow: hidden;
-	display: inline-block; /* Necessary to trigger "hasLayout" in IE */
-	display: block; /* Sets element back to block */
+  overflow: hidden;
+  display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+  display: block; /* Sets element back to block */
 }
 .fluidImage {
-	width: auto;
+  width: auto;
   max-width: 100%;
   height: auto;
 }
@@ -98,46 +98,46 @@ a {
 /* Header */
 
 #header {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 .cities {
-	padding: 20px 0;
-	text-align: center;
+  padding: 20px 0;
+  text-align: center;
 }
 .cities li {
-	display: inline-block;
-	padding: 8px;
-	font-size: 24px;
-	text-transform: uppercase;
+  display: inline-block;
+  padding: 8px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 /* Main Container */
 
 #main {
-	opacity: 0;
+  opacity: 0;
 }
 
 #logo {
-	padding: 0 5px;
-	margin: 0 auto;
-	width: 320px;
+  padding: 0 5px;
+  margin: 0 auto;
+  width: 320px;
 }
 
 /* Footer */
 
 #footer {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 #footer p {
-	padding: 10px 5px;
-	line-height: 24px;
-	font-size: 20px;
-	text-align: center;
-	text-transform: uppercase;
+  padding: 10px 5px;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
