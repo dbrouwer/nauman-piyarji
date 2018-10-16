@@ -79,6 +79,7 @@ body {
   font-family: 'Brandon Grotesque', 'Times New Roman', sans-serif;;
   font-weight: normal; 
   font-style: normal;
+  background-color: #ccc;
 }
 a {
   color: #000;
@@ -109,7 +110,7 @@ a {
 }
 .cities li {
   display: inline-block;
-  padding: 8px;
+  padding: 8px 18px;
   font-size: 24px;
   text-transform: uppercase;
 }
